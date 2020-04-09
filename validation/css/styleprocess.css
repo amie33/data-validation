@@ -1,0 +1,61 @@
+/*style for my process page*/
+*{
+	background-color: indigo;
+	padding: 5px;
+}
+.pHeading{
+	padding-top: 30px;
+	text-align: center;
+	color: greenyellow;
+	font-size: 50px;
+	font-family: 'Cinzel', serif;
+}
+
+.pWrapper{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+p{
+  overflow: hidden; 
+  border-right: .15em solid mediumspringgreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 10.5s steps(40, end), blink-caret .75s step-end infinite;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold; 
+  text-align: center;
+  font-size: 25px; 
+  color: greenyellow;
+}
+
+/* The typing effect where to start and where to end*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect at the end of the animation, its what keeps the cursor on the page */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+.it{
+	height: 500px;
+	width: 500px;
+	position: relative; 
+	right: -388px;
+	padding-top: 50px;
+	animation-name: example;
+    animation-duration: 10s;
+}
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
